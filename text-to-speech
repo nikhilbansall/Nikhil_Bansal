@@ -1,0 +1,11 @@
+import win32com.client  as wincl
+
+# Create a SAPI voice object
+speak = wincl.Dispatch("SAPI.SpVoice")
+
+# Text to be spoken
+while True:
+    speak = input("enter :")
+    # Speak the text
+    speak.Speak(speak)
+#it is easy for windows
